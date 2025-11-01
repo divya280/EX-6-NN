@@ -1,15 +1,14 @@
 
 
-<H3>EX. NO.6</H3>
-<H3>DATE:</H3>
-<H1 ALIGN =CENTER>Heart attack prediction using MLP</H1>
-<H3>Name : Divyashree V</H3>
-<H3>Register Number: 212223230051</H3>
-<H3>Aim:</H3> 
+<H1> EX-6 : HEART ATTCAK PREDICTION USING MLP</H1>
 
+#### NAME :V DIVYASHREE
+#### R.NO : 212223230051
+
+## AIM :  
 To construct a  Multi-Layer Perceptron to predict heart attack using Python
 
-<H3>Algorithm:</H3>
+## ALGORITHM :
 Step 1:Import the required libraries: numpy, pandas, MLPClassifier, train_test_split, StandardScaler, accuracy_score, and matplotlib.pyplot.<BR>
 Step 2:Load the heart disease dataset from a file using pd.read_csv().<BR>
 Step 3:Separate the features and labels from the dataset using data.iloc values for features (X) and data.iloc[:, -1].values for labels (y).<BR>
@@ -22,8 +21,7 @@ Step 9:Evaluate the model's accuracy by comparing the predicted labels (y_pred) 
 Step 10:Print the accuracy of the model.<BR>
 Step 11:Plot the error convergence during training using plt.plot() and plt.show().<BR>
 
-<H3>Program: </H3>
-
+## PROGRAM : 
 ```
 import numpy as np
 import pandas as pd
@@ -33,7 +31,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
 import matplotlib.pyplot as plt
 
-data=pd.read_csv('heart.csv')
+data=pd.read_csv('https://raw.githubusercontent.com/ElavarasanMurugan/EX-6-NN/main/heart.csv')
 X=data.iloc[:,:-1].values
 y=data.iloc[:,-1].values
 
@@ -73,11 +71,9 @@ print("Confusion Matrix:\n",conf_matrix)
 print("Classification Report:\n",classification_rep)
 ```
 
-<H3>Output: </H3>
+## OUTPUT :
+<img width="1106" height="876" alt="image" src="https://github.com/user-attachments/assets/89bab51c-9591-4f30-85a7-99d3af7231c8" />
 
-![alt text](output/image.png)
-![alt text](<output/image copy.png>)
-![alt text](<output/image copy 2.png>)
 
-<H3>Results:</H3>
+## RESULT :
 Thus, an ANN with MLP is constructed and trained to predict the heart attack using python.
